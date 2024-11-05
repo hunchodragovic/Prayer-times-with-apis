@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="style2.css">
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <h2>hello wrld</h2>
+    <div class="container">
+        <div class="screen">
+            <div class="screen__content">
+                <form class="login">
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input id="email-input" type="text" class="login__input" placeholder="User name / Email">
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-lock"></i>
+                        <input type="password" id="pw-input" class="login__input" placeholder="Password">
+                    </div>
+                    <button id="btn" class="button login__submit">
+                        <span class="button__text">Log In Now</span>
+                        <i class="button__icon fas fa-chevron-right"></i>
+                    </button>				
+                </form>
+                <div class="social-login">
+                    <h3>log in via</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-login__icon fab fa-instagram"></a>
+                        <a href="#" class="social-login__icon fab fa-facebook"></a>
+                        <a href="#" class="social-login__icon fab fa-twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>		
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>		
+        </div>
+    </div>
+    <!-- <script>
+        let token = ""
+
+        axios.post('https://reqres.in/api/login',{
+    "email": "eve.holt@reqres.in",
+    "password": "cityslicka"
+})
+  .then(function (response) {
+    
+ let token = response.data.token
+ localStorage.setItem('token',token)
+ console.log("token received", token);
+ createNewUser()
+ 
+  })
+
+
+  function createNewUser(){
+    let token = localStorage.getItem('token')
+    let config = {
+  headers: {
+    "Authorization": `Bearer${token}`,
+  }
+}
+axios.post('https://reqres.in/api/users',{
+    "name": "huncho",
+    "job": "leader"
+},config)
+  .then(function (response) {
+    
+console.log(response);
+  })
+  }
+ 
+    </script> -->
+    <script src="script2.js"></script>
+</body>
+</html>
